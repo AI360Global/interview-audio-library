@@ -1,11 +1,11 @@
-const search = document.getElementById("search");
+const searchInput = document.getElementById("search");
+const cards = document.querySelectorAll(".card");
 
-search.addEventListener("keyup", function () {
-  const filter = search.value.toLowerCase();
-  const cards = document.querySelectorAll(".card");
+searchInput.addEventListener("input", () => {
+  const term = searchInput.value.trim().toLowerCase();
 
-  cards.forEach(card => {
+  cards.forEach((card) => {
     const text = card.innerText.toLowerCase();
-    card.style.display = text.includes(filter) ? "block" : "none";
+    card.style.display = text.includes(term) ? "" : "none";
   });
 });
