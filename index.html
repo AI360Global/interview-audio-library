@@ -40,6 +40,12 @@ margin:auto;
 padding:40px 20px;
 }
 
+.section-title{
+margin-top:30px;
+margin-bottom:20px;
+font-size:28px;
+}
+
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -51,7 +57,6 @@ background:#1e293b;
 padding:24px;
 border-radius:14px;
 transition:all .2s;
-cursor:pointer;
 border:1px solid rgba(255,255,255,0.08);
 }
 
@@ -71,8 +76,8 @@ color:#cbd5e1;
 
 .button{
 display:inline-block;
-margin-top:10px;
-padding:10px 14px;
+margin-top:12px;
+padding:10px 16px;
 background:#4f46e5;
 color:white;
 border-radius:8px;
@@ -84,6 +89,11 @@ font-size:14px;
 background:#6366f1;
 }
 
+.recorded{
+background:#1f2937;
+border-left:4px solid #22c55e;
+}
+
 </style>
 
 </head>
@@ -92,63 +102,83 @@ background:#6366f1;
 
 <section class="hero">
 
-<h3>Interview Preparation Audio Library</h3>
+<h1>Interview Preparation Library</h1>
 
 <p>
-Topic-based audio modules for interview preparation.
-Select an interview track below.
+Audio learning modules and recorded training sessions for interview preparation.
 </p>
 
 </section>
 
 <div class="container">
 
+<!-- Interview Tracks -->
+
+<h2 class="section-title">Interview Preparation Tracks</h2>
+
 <div class="grid">
 
 <div class="card">
-<h2>Toyota Project Management Intern (Rithika)</h2>
+<h2>Toyota Project Management Intern</h2>
+
 <p>
 Project management, analytics, leadership, and communication skills required for Toyota Insurance internship interviews.
 </p>
 
 <a class="button" href="Toyota-Intern.html">
-Open Interview
+Open Interview Track
 </a>
 
 </div>
+
 
 <div class="card">
 <h2>Data Migration Project Lead</h2>
+
 <p>
-Database migrations, AWS DMS, validation, ETL pipelines, and performance tuning interview preparation.
+Database migration concepts including AWS DMS, validation, ETL pipelines, and troubleshooting strategies.
 </p>
 
-<a class="button" href="datamigration.html">
-Open Interview
+<a class="button" href="DataMigration-Lead.html">
+Open Interview Track
 </a>
 
 </div>
 
-<div class="card">
-<h2>Product Management Interview</h2>
+</div>
+
+
+<!-- Recorded Sessions -->
+
+<h2 class="section-title">Recorded Sessions</h2>
+
+<div class="grid">
+
+<div class="card recorded">
+
+<h2>Interview Preparation Workshop</h2>
+
 <p>
-Product thinking, business strategy, experimentation, and customer-focused product development.
+Recorded Zoom session covering interview strategies, preparation techniques, and common questions.
 </p>
 
-<a class="button" href="ProductManagement.html">
-Open Interview
+<a class="button" href="recordings/interview-workshop.html">
+Open Recorded Session
 </a>
 
 </div>
 
-<div class="card">
-<h2>Data Engineering Interview</h2>
+
+<div class="card recorded">
+
+<h2>Data Migration Deep Dive</h2>
+
 <p>
-ETL pipelines, data systems, analytics, architecture, and distributed systems.
+Detailed recorded discussion on database migration architectures, troubleshooting, and validation strategies.
 </p>
 
-<a class="button" href="DataEngineering.html">
-Open Interview
+<a class="button" href="recordings/datamigration-session.html">
+Open Recorded Session
 </a>
 
 </div>
