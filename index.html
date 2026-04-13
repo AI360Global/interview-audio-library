@@ -1,140 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interview Audio Library</title>
-  <link rel="stylesheet" href="styles.css" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Interview Preparation Library</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#0f172a;
+color:white;
+}
+
+.hero{
+padding:60px 20px;
+text-align:center;
+background:linear-gradient(135deg,#1e293b,#020617);
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#cbd5f5;
+font-size:18px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:24px;
+}
+
+.card{
+background:#1e293b;
+padding:24px;
+border-radius:14px;
+transition:all .2s;
+cursor:pointer;
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:#26344f;
+}
+
+.card h2{
+margin-top:0;
+font-size:22px;
+}
+
+.card p{
+color:#cbd5e1;
+}
+
+.button{
+display:inline-block;
+margin-top:10px;
+padding:10px 14px;
+background:#4f46e5;
+color:white;
+border-radius:8px;
+text-decoration:none;
+font-size:14px;
+}
+
+.button:hover{
+background:#6366f1;
+}
+
+</style>
+
 </head>
+
 <body>
-  <header class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Interview Prep - TOYOTA -Intern (Rithika)</p>
- 
-      <input
-        type="text"
-        id="search"
-        class="search"
-        placeholder="Search topics..."
-        aria-label="Search topics"
-      />
-    </div>
-  </header>
 
-  <main class="container">
-    <section class="grid" id="topicGrid">
-      <article class="card">
-        <div class="card-top">
-          <span class="badge">Topic 1</span>
-          <h2>Project Management</h2>
-        </div>
-        <p>Planning, execution, timelines, dependencies, and delivery basics.</p>
-        <audio controls preload="none">
-          <source src="ProjectManagement-01.mp3" type="audio/mpeg" />
-        </audio>
-      </article>
+<section class="hero">
 
-      <article class="card">
-        <div class="card-top">
-          <span class="badge">Topic 2</span>
-          <h2>Data Analytics</h2>
-        </div>
-        <p>Metrics, dashboards, trend analysis, experimentation, and insights.</p>
-        <audio controls preload="none">
-          <source src="DataAnalytics-01.mp3" type="audio/mpeg" />
-        </audio>
-      </article>
+<h1>Interview Preparation Audio Library</h1>
 
-      <article class="card">
-        <div class="card-top">
-          <span class="badge">Topic 3</span>
-          <h2>Technical &amp; Data Systems</h2>
-        </div>
-        <p>Data flows, APIs, databases, cloud basics, and system integration.</p>
-        <audio controls preload="none">
-          <source src="TechnicalDataSystems-01.mp3" type="audio/mpeg" />
-        </audio>
-      </article>
+<p>
+Topic-based audio modules for interview preparation.
+Select an interview track below.
+</p>
 
-      <article class="card">
-        <div class="card-top">
-          <span class="badge">Topic 4</span>
-          <h2>Business &amp; Product Thinking</h2>
-        </div>
-        <p>Customer value, product strategy, business impact, and pilot design.</p>
-        <audio controls preload="none">
-          <source src="BusinessProductThinking-01.mp3" type="audio/mpeg" />
-        </audio>
-      </article>
+</section>
 
-      <article class="card">
-        <div class="card-top">
-          <span class="badge">Topic 5</span>
-          <h2>Communication &amp; Stakeholder Skills</h2>
-        </div>
-        <p>Stakeholder alignment, meetings, updates, reporting, and collaboration.</p>
-        <audio controls preload="none">
-          <source src="CommunicationStakeholder-01.mp3" type="audio/mpeg" />
-        </audio>
-      </article>
+<div class="container">
 
-      <article class="card">
-        <div class="card-top">
-          <span class="badge">Topic 6</span>
-          <h2>Experimentation &amp; Innovation</h2>
-        </div>
-        <p>Pilots, A/B testing, hypothesis thinking, learning loops, and scaling.</p>
-        <audio controls preload="none">
-          <source src="ExperimentationInnovation-01.mp3" type="audio/mpeg" />
-        </audio>
-      </article>
+<div class="grid">
 
-      <article class="card">
-        <div class="card-top">
-          <span class="badge">Topic 7</span>
-          <h2>Governance, Privacy &amp; Compliance</h2>
-        </div>
-        <p>Consent, data privacy, governance basics, compliance, and controls.</p>
-        <audio controls preload="none">
-          <source src="GovernancePrivacyCompliance-01.mp3" type="audio/mpeg" />
-        </audio>
-      </article>
+<div class="card">
+<h2>Toyota Project Management Intern</h2>
+<p>
+Project management, analytics, leadership, and communication skills required for Toyota Insurance internship interviews.
+</p>
 
-      <article class="card">
-        <div class="card-top">
-          <span class="badge">Topic 8</span>
-          <h2>Tools &amp; Software Skills</h2>
-        </div>
-        <p>Excel, PowerPoint, SQL, Python, Power BI, Tableau, and PM tools.</p>
-        <audio controls preload="none">
-          <source src="ToolsSoftwareSkills-01.mp3" type="audio/mpeg" />
-        </audio>
-      </article>
+<a class="button" href="Toyota-Intern.html">
+Open Interview
+</a>
 
-      <article class="card">
-        <div class="card-top">
-          <span class="badge">Topic 9</span>
-          <h2>Leadership &amp; Execution</h2>
-        </div>
-        <p>Ownership, prioritization, follow-through, accountability, and delivery.</p>
-        <audio controls preload="none">
-          <source src="LeadershipExecution-01.mp3" type="audio/mpeg" />
-        </audio>
-      </article>
+</div>
 
-      <article class="card">
-        <div class="card-top">
-          <span class="badge">Topic 10</span>
-          <h2>Strategic Thinking</h2>
-        </div>
-        <p>Long-term thinking, prioritization, value creation, and business strategy.</p>
-        <audio controls preload="none">
-          <source src="StrategicThinking-01.mp3" type="audio/mpeg" />
-        </audio>
-      </article>
-    </section>
-  </main>
+<div class="card">
+<h2>Data Migration Project Lead</h2>
+<p>
+Database migrations, AWS DMS, validation, ETL pipelines, and performance tuning interview preparation.
+</p>
 
-  <script src="script.js"></script>
+<a class="button" href="DataMigration-Lead.html">
+Open Interview
+</a>
+
+</div>
+
+<div class="card">
+<h2>Product Management Interview</h2>
+<p>
+Product thinking, business strategy, experimentation, and customer-focused product development.
+</p>
+
+<a class="button" href="ProductManagement.html">
+Open Interview
+</a>
+
+</div>
+
+<div class="card">
+<h2>Data Engineering Interview</h2>
+<p>
+ETL pipelines, data systems, analytics, architecture, and distributed systems.
+</p>
+
+<a class="button" href="DataEngineering.html">
+Open Interview
+</a>
+
+</div>
+
+</div>
+
+</div>
+
 </body>
 </html>
